@@ -5,7 +5,7 @@
 ###Dom操作
 
 | Method      |    Supported | Remark  |
-| :-------- | --------:| :--: |
+| --------: | :--: | :-------- |
 |length| √ | |	
 |jquery| √ | |	
 |toArray| √ | |	
