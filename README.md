@@ -4,8 +4,73 @@
 
 ###Dom操作
 
-| Item      |    Value | Qty  |
+| Method      |    Supported | Remark  |
 | :-------- | --------:| :--: |
-| Computer  | 1600 USD |  5   |
-| Phone     |   12 USD |  12  |
-| Pipe      |    1 USD | 234  |
+|length| | |	
+|jquery| | |	
+|toArray| | |	
+|get| | |	
+|pushStack| | |	
+|each| | |	
+|map| | |	
+|slice| | |	
+|first| | |	
+|last| | |	
+|eq| | |	
+|end| | |	
+|find| | |	
+|filter| | partial |
+|not| | |	
+|is| | |	
+|has| |	?|
+|closest| | |	
+|index| | |	
+|add| | |	
+|addBack| | |	
+|parent| | |	
+|parents| |	?|
+|parentsUntil| | |	
+|next| | |	
+|prev| | |	
+|nextAll| | |	
+|prevAll| | |	
+|nextUntil| | |	
+|prevUntil| | |	
+|siblings| | |	
+|children| | |	
+|contents| | |	
+|ready| | |	
+|data| | |	
+|removeData| | |	
+|queue| | |	
+|dequeue| | |	
+|clearQueue| | |	
+|promise| | |	
+|detach| | partial |
+|remove| | partial |
+|text| | |	
+|append| | |	
+|prepend| | |	
+|before| | |	
+|after| | |	
+|empty| | |	
+|clone| | |	
+|html| | partial |
+|replaceWith| | |	
+|appendTo| | |	
+|prependTo| | |	
+|insertBefore| | |	
+|insertAfter| | |	
+|replaceAll| | |	
+|delay| | |	
+|attr| | |	
+|removeAttr| | |	
+|prop| | |	
+|removeProp| | |	
+|addClass| | |	
+|removeClass| | |	
+|toggleClass| | |	
+|hasClass| | |	
+|val| | partial |
+|serialize| | |	
+|serializeArray| | |	
