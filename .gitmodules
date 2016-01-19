@@ -1,0 +1,3 @@
+[submodule "samurai-native"]
+	path = samurai-native
+	url = https://github.com/water2891/samurai-native
