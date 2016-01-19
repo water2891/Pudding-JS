@@ -54,3 +54,7 @@ typedef PuddingHtmlRenderQuery * (^PuddingHtmlRenderQueryBlockN)( id first );
 @prop_strong( UIView *,					view );
 
 @end
+
+@interface UIView(PuddingTemplateLoading)
+
+@end
