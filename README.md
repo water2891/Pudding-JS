@@ -1,8 +1,10 @@
 # Pudding-JS
 
-##jQuery方法支持列表
+JavascriptCore with jQuery for Samurai-native. Now you can use jQuery to control Samurai-native's UI & Interaction
 
-###Dom操作
+##jQuery Methods Support List
+
+###Dom's methods
 
 | Method      |    Supported | Remark  |
 | --------: | :--: | :-------- |
