@@ -8,7 +8,6 @@
 
 #import "Samurai_Template.h"
 
-
 @interface SamuraiTemplate(extension)
 
 //把SamuraiTemplate的私有方法声明为公开方法

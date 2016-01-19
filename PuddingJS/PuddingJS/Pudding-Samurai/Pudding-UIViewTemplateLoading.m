@@ -6,7 +6,6 @@
 //  Copyright © 2016年 苏打水. All rights reserved.
 //
 
-#import "Pudding-UIViewTemplateLoading.h"
 #import "UIView+TemplateLoading.h"
 #import "Pudding-HtmlRenderQuery.h"
 
@@ -73,7 +72,7 @@
                 
                 NSNumber * insertIndex = [rootRender.dom.attr valueForKey:@"insertIndex"];
                 NSNumber * addMode = [rootRender.dom.attr valueForKey:@"addMode"];;
-
+                
                 SamuraiRenderObject * baseChild = [self.renderer.childs objectAtIndex:insertIndex.unsignedLongValue];
                 
                 for ( SamuraiRenderObject * childRender in [rootRender.childs reverseObjectEnumerator] )
@@ -84,19 +83,19 @@
                     [childRender.dom retainAssociatedObject:rootRender.dom.document forKey:"document"];
                     //end: 20160108 by water
                     
-//                    switch (addMode.intValue) {
-//                        case 1:
-//
-//                        case 3:
-//                            [self.renderer insertNode:childRender beforeNode:baseChild];
-//                            break;
-//                        case 2:
-//                            [self.renderer insertNode:childRender afterNode:baseChild];
-//                            break;
-//                        default:
-//                            [self.renderer appendNode:childRender];
-//                            break;
-//                    }
+                    //                    switch (addMode.intValue) {
+                    //                        case 1:
+                    //
+                    //                        case 3:
+                    //                            [self.renderer insertNode:childRender beforeNode:baseChild];
+                    //                            break;
+                    //                        case 2:
+                    //                            [self.renderer insertNode:childRender afterNode:baseChild];
+                    //                            break;
+                    //                        default:
+                    //                            [self.renderer appendNode:childRender];
+                    //                            break;
+                    //                    }
                     
                     UIView * childView = [childRender createViewWithIdentifier:nil];
                     

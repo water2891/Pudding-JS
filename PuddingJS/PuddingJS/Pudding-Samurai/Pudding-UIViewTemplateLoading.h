@@ -18,8 +18,6 @@
 
 @interface UIView(PuddingTemplateLoading)
 
-- (void)handleTemplate:(SamuraiTemplate *)template;
-
 @end
 
 #endif	// #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)

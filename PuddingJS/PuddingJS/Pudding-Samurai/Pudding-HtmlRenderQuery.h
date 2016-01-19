@@ -31,17 +31,17 @@ typedef PuddingHtmlRenderQuery * (^PuddingHtmlRenderQueryBlockN)( id first );
 @end
 
 //给UIViewController扩展一个find方法，用来调用Samurai_HtmlRenderQuery.h中定义的$方法
-@interface UIViewController(PuddingUCHtmlRenderQuery)
-
-- (PuddingHtmlRenderQuery *)find:(id)queryString;
-
-@end
-
-@interface UIView(PuddingUVHtmlRenderQuery)
-
-- (PuddingHtmlRenderQuery *)find:(id)queryString;
-
-@end
+//@interface UIViewController(PuddingUCHtmlRenderQuery)
+//
+//- (PuddingHtmlRenderQuery *)find:(id)queryString;
+//
+//@end
+//
+//@interface UIView(PuddingUVHtmlRenderQuery)
+//
+//- (PuddingHtmlRenderQuery *)find:(id)queryString;
+//
+//@end
 
 @interface NSObject(PuddingNSObjectHtmlRenderQuery)
 

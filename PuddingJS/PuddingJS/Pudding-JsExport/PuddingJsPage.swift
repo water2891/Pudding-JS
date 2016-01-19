@@ -486,6 +486,7 @@ extension UIView:UIViewJSExport{
             renderFlow.process()
             
             self.template.changeState(TemplateState_Loaded)
+
         }
     }
     

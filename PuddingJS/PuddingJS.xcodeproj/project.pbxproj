@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1947DA34DC18A6E8863FB0DB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECFB47471F9ADD2605DE167 /* Pods.framework */; };
-		CCBF49B91C4E402E0002EAA3 /* Pudding-UIViewTemplateLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBF49B81C4E402E0002EAA3 /* Pudding-UIViewTemplateLoading.m */; };
+		CC5D56301C4E523800CBAB16 /* Pudding-UIViewTemplateLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5D562F1C4E523800CBAB16 /* Pudding-UIViewTemplateLoading.m */; };
 		CCFCC8931C4E38B200D37C7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFCC8921C4E38B200D37C7E /* AppDelegate.swift */; };
 		CCFCC89A1C4E38B200D37C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCFCC8991C4E38B200D37C7E /* Assets.xcassets */; };
 		CCFCC89D1C4E38B200D37C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFCC89B1C4E38B200D37C7E /* LaunchScreen.storyboard */; };
@@ -412,8 +412,8 @@
 		8B1C5D962EE5EF9D7CF6D878 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9D0A52D3BBA96F2B13C13CB4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9ECFB47471F9ADD2605DE167 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCBF49B71C4E402E0002EAA3 /* Pudding-UIViewTemplateLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pudding-UIViewTemplateLoading.h"; sourceTree = "<group>"; };
-		CCBF49B81C4E402E0002EAA3 /* Pudding-UIViewTemplateLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pudding-UIViewTemplateLoading.m"; sourceTree = "<group>"; };
+		CC5D562E1C4E522200CBAB16 /* Pudding-UIViewTemplateLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pudding-UIViewTemplateLoading.h"; sourceTree = "<group>"; };
+		CC5D562F1C4E523800CBAB16 /* Pudding-UIViewTemplateLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pudding-UIViewTemplateLoading.m"; sourceTree = "<group>"; };
 		CCFCC88F1C4E38B200D37C7E /* PuddingJS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuddingJS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFCC8921C4E38B200D37C7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCFCC8991C4E38B200D37C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1233,11 +1233,11 @@
 		CCFCC8911C4E38B200D37C7E /* PuddingJS */ = {
 			isa = PBXGroup;
 			children = (
+				CCFCEBB61C4E3B2500D37C7E /* Pudding-EasyIOS */,
 				CCFCEBE41C4E3C4200D37C7E /* www */,
 				CCFCEBE91C4E3DD600D37C7E /* Pudding-Extend */,
-				CCFCEBB11C4E3B2500D37C7E /* Pudding-Core */,
-				CCFCEBB61C4E3B2500D37C7E /* Pudding-EasyIOS */,
 				CCFCEBBF1C4E3B2500D37C7E /* Pudding-JsExport */,
+				CCFCEBB11C4E3B2500D37C7E /* Pudding-Core */,
 				CCFCEBC71C4E3B2500D37C7E /* Pudding-Samurai */,
 				CCFCC8921C4E38B200D37C7E /* AppDelegate.swift */,
 				CCFCC8991C4E38B200D37C7E /* Assets.xcassets */,
@@ -2496,12 +2496,12 @@
 		CCFCEBC71C4E3B2500D37C7E /* Pudding-Samurai */ = {
 			isa = PBXGroup;
 			children = (
-				CCBF49B71C4E402E0002EAA3 /* Pudding-UIViewTemplateLoading.h */,
-				CCBF49B81C4E402E0002EAA3 /* Pudding-UIViewTemplateLoading.m */,
 				CCFCEBCC1C4E3B2500D37C7E /* Pudding-JsDocument.swift */,
 				CCFCEBCD1C4E3B2500D37C7E /* Pudding-Template.h */,
 				CCFCEBC81C4E3B2500D37C7E /* Pudding-HtmlDocumentWorkflow.h */,
 				CCFCEBC91C4E3B2500D37C7E /* Pudding-HtmlDocumentWorkflow.m */,
+				CC5D562E1C4E522200CBAB16 /* Pudding-UIViewTemplateLoading.h */,
+				CC5D562F1C4E523800CBAB16 /* Pudding-UIViewTemplateLoading.m */,
 				CCFCEBCA1C4E3B2500D37C7E /* Pudding-HtmlRenderQuery.h */,
 				CCFCEBCB1C4E3B2500D37C7E /* Pudding-HtmlRenderQuery.m */,
 			);
@@ -2760,7 +2760,7 @@
 				CCFCEA8F1C4E3A4E00D37C7E /* Samurai_ActivityStackGroup.m in Sources */,
 				CCFCEA3C1C4E3A4E00D37C7E /* Samurai_Config(Phone).m in Sources */,
 				CCFCEA601C4E3A4E00D37C7E /* Samurai_SignalBus.m in Sources */,
-				CCBF49B91C4E402E0002EAA3 /* Pudding-UIViewTemplateLoading.m in Sources */,
+				CC5D56301C4E523800CBAB16 /* Pudding-UIViewTemplateLoading.m in Sources */,
 				CCFCEB6F1C4E3A4F00D37C7E /* Samurai_HtmlLayoutText.m in Sources */,
 				CCFCEB321C4E3A4F00D37C7E /* Samurai_HtmlElementDt.m in Sources */,
 				CCFCEB461C4E3A4F00D37C7E /* Samurai_HtmlElementInputImage.m in Sources */,
