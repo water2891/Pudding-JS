@@ -2,6 +2,12 @@
 
 JavascriptCore with jQuery for Samurai-native. Now you can use jQuery to control Samurai-native's UI & Interaction
 
+##jQuery 2.x
+
+Pudding-JS use jQuery custom build base on jQuery 2.x:
+
+`grunt custom:-ajax,-ajax/xhr,-ajax/script,-ajax/jsonp,-css,-deprecated,-dimensions,-effects,-event/alias,-event/trigger,-event/focusin,-offset,-wrap,-exports/amd,-sizzle`
+
 ##jQuery Methods Support List
 
 ###Dom's methods
