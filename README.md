@@ -24,13 +24,13 @@ JavascriptCore with jQuery for Samurai-native. Now you can use jQuery to control
 |filter| √ | partial |
 |not| √ | |	
 |is| √ | |	
-|has| √ |	?|
+|has| √ | partial |
 |closest| √ | |	
 |index| √ | |	
 |add| √ | |	
 |addBack| √ | |	
 |parent| √ | |	
-|parents| √ |	?|
+|parents| √ | partial |
 |parentsUntil| √ | |	
 |next| √ | |	
 |prev| √ | |	
@@ -76,3 +76,7 @@ JavascriptCore with jQuery for Samurai-native. Now you can use jQuery to control
 |val| √ | partial |
 |serialize| ? | |	
 |serializeArray| ? | |	
+
+## Licensing
+
+Pudding-JS is licensed under the MIT License.
