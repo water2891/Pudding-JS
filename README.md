@@ -1,6 +1,6 @@
 # Pudding-JS
 
-JavascriptCore with jQuery for Samurai-native. Now you can use jQuery to control Samurai-native's UI & Interaction
+JavascriptCore with jQuery for [Samurai-native](https://github.com/hackers-painters/samurai-native). Now you can use jQuery to control Samurai-native's UI & Interaction
 
 ##Screen Shots
 
