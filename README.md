@@ -4,7 +4,7 @@ JavascriptCore with jQuery for Samurai-native. Now you can use jQuery to control
 
 ##jQuery 2.x
 
-Pudding-JS use jQuery custom build base on jQuery 2.x:
+Pudding-JS use jQuery custom build base on [jQuery 2.x](https://github.com/jquery/jquery/tree/2.2-stable):
 
 ```bash
 $ grunt custom:-ajax,-ajax/xhr,-ajax/script,-ajax/jsonp,-css,-deprecated,-dimensions,-effects,-event/alias,-event/trigger,-event/focusin,-offset,-wrap,-exports/amd,-sizzle
