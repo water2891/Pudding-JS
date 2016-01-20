@@ -85,6 +85,41 @@ $ grunt custom:-ajax,-ajax/xhr,-ajax/script,-ajax/jsonp,-css,-deprecated,-dimens
 |serialize| ? | |	
 |serializeArray| ? | |	
 
+###Ajax
+| Method      |    Supported | Remark  |
+| --------: | :--: | :-------- |
+| get | √  | partial |
+
+###Utility
+| Method      |    Supported | Remark  |
+| --------: | :--: | :-------- |
+| jQuery.contains() | √ |  |
+| jQuery.each() | √ |  |
+| jQuery.extend() | √ |  |
+| jQuery.globalEval() |  |  |
+| jQuery.grep() |  |  |
+| jQuery.inArray() |  |  |
+| jQuery.isArray() |  |  |
+| jQuery.isEmptyObject() |  |  |
+| jQuery.isFunction() |  |  |
+| jQuery.isNumeric() |  |  |
+| jQuery.isPlainObject() |  |  |
+| jQuery.isWindow() |  |  |
+| jQuery.isXMLDoc() |  |  |
+| jQuery.makeArray() |  |  |
+| jQuery.map() |  |  |
+| jQuery.merge() |  |  |
+| jQuery.noop()  |  |  |
+| jQuery.now() |  |  |
+| jQuery.parseHTML() |  |  |
+| jQuery.parseJSON() |  |  |
+| jQuery.parseXML() |  |  |
+| jQuery.proxy() |  |  |
+| jQuery.support |  |  |
+| jQuery.trim() |  |  |
+| jQuery.type() |  |  |
+| jQuery.unique() |  |  |
+
 ## Licensing
 
 Pudding-JS is licensed under the MIT License.
