@@ -287,6 +287,7 @@
                         [childRender bindOutletsTo:self];
                         
                         childRender.dom.view = childView;
+                        childRender.dom.renderer = childRender;
                     }
                 }
                 //start: 20160108 by water

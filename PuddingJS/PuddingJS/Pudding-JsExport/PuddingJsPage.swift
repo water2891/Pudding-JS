@@ -459,7 +459,7 @@ extension UIView:UIViewJSExport{
     
     public func addNodes(domTree:SamuraiDomNode, addMode:Int = 0, by:SamuraiDomNode?){
         var insertIndex = 0
-        if nil != by{
+        if nil != by && nil != by!.renderer{
             insertIndex = self.renderer.childs.indexOfObject((by!.renderer)!)
         }
         
@@ -660,29 +660,13 @@ extension SamuraiDomNode:domNodeJSExport,NSMutableCopying{
 
     public var previousSibling:SamuraiDomNode?{
         get{
-            if nil != self.parent{
-                let index = self.parent.childs.indexOfObject(self)
-                if self == self.parent.childs.firstObject as! SamuraiDomNode{
-                    return nil
-                }else{
-                    return (self.parent.childs.objectAtIndex(UInt(index - 1)) as! SamuraiDomNode)
-                }
-            }
-            return nil
+            return self.prev
         }
     }
     
     public var nextSibling:SamuraiDomNode?{
         get{
-            if nil != self.parent{
-                let index = self.parent.childs.indexOfObject(self)
-                if self == self.parent.childs.lastObject as! SamuraiDomNode{
-                    return nil
-                }else{
-                    return (self.parent.childs.objectAtIndex(UInt(index + 1)) as! SamuraiDomNode)
-                }
-            }
-            return nil
+            return self.next
         }
     }
     
@@ -787,18 +771,17 @@ extension SamuraiDomNode:domNodeJSExport,NSMutableCopying{
     }
     
     public func appendChild(node:SamuraiDomNode) -> SamuraiDomNode{
-        self.appendNode(node)
-        node.attach(self.document)
-        
         if nil != self.view{
             self.view.addNodes(node, addMode: 0, by: nil)
         }
+        
+        self.appendNode(node)
+        node.attach(self.document)
         
         return node
     }
     
     public func removeChild(node:SamuraiDomNode) -> SamuraiDomNode{
-
         if nil != node.view{
             node.view.remove()
         }
@@ -810,13 +793,12 @@ extension SamuraiDomNode:domNodeJSExport,NSMutableCopying{
     }
     
     public func insertBefore(newnode:SamuraiDomNode, _ existingnode:SamuraiDomNode) -> SamuraiDomNode{
-        self.insertNode(newnode, beforeNode: existingnode)
-        newnode.attach(self.document)
-        
         if nil != self.view && nil != existingnode.view{
-            print(existingnode.textContent)
             self.view.addNodes(newnode, addMode: 3, by: existingnode)
         }
+        
+        self.insertNode(newnode, beforeNode: existingnode)
+        newnode.attach(self.document)
         
         return newnode
     }

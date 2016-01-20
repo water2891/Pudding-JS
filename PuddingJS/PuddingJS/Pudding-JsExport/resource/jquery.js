@@ -1102,7 +1102,6 @@ jQuery.each( {
 		return siblings( ( elem.parentNode || {} ).firstChild, elem );
 	},
 	children: function( elem ) {
-		console.log("children",elem.firstChild);
 		return siblings( elem.firstChild );
 	},
 	contents: function( elem ) {
