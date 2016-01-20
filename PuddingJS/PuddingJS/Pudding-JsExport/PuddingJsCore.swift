@@ -72,7 +72,7 @@ public class PuddingJsContext:JSContext{
         super.init()
 
         //模拟jQuery
-        self.setObject(JQuery.self, forKeyedSubscript: "jquery")
+        self.setObject(JQuery.self, forKeyedSubscript: "Native")
         
 
         //映射页面跳转控制

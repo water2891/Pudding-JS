@@ -129,6 +129,9 @@ public class PuddingJsPage: PuddingPage,PuddingJsPageExport{
         
         let jqDocument = SamuraiDocument.resourceAtPath("jquery.js") as! SamuraiDocument
         self.eval(jqDocument.resContent)
+
+        let jqPatchDocument = SamuraiDocument.resourceAtPath("jquery_patch.js") as! SamuraiDocument
+        self.eval(jqPatchDocument.resContent)
         
         //遍历head自定义脚本
         if nil != self.template.document.domTree && self.template.document.domTree.childs.count()>0{
@@ -457,7 +460,11 @@ extension UIView:UIViewJSExport{
     public func addNodes(domTree:SamuraiDomNode, addMode:Int = 0, by:SamuraiDomNode?){
         var insertIndex = 0
         if nil != by{
-            insertIndex = self.renderer.childs.indexOfObject((by?.renderer)!)
+            insertIndex = self.renderer.childs.indexOfObject((by!.renderer)!)
+        }
+        
+        if insertIndex == NSNotFound{
+            insertIndex = 0
         }
         
         if nil == self.template {
@@ -791,12 +798,13 @@ extension SamuraiDomNode:domNodeJSExport,NSMutableCopying{
     }
     
     public func removeChild(node:SamuraiDomNode) -> SamuraiDomNode{
-        self.removeNode(node)
-        node.detach()
-        
+
         if nil != node.view{
             node.view.remove()
         }
+        
+        self.removeNode(node)
+        node.detach()
         
         return node
     }
@@ -805,7 +813,8 @@ extension SamuraiDomNode:domNodeJSExport,NSMutableCopying{
         self.insertNode(newnode, beforeNode: existingnode)
         newnode.attach(self.document)
         
-        if nil != self.view{
+        if nil != self.view && nil != existingnode.view{
+            print(existingnode.textContent)
             self.view.addNodes(newnode, addMode: 3, by: existingnode)
         }
         

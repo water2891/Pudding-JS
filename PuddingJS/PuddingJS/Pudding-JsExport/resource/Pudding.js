@@ -20,12 +20,10 @@ var Pudding = {
 	getCmp	: function(str){
 		return document.querySelectorAll(str)
 	},
-	get		: jquery.get,
-	print	: jquery.output,
+	get		: Native.get,
+	print	: Native.output,
 	log		: console.log,
 }
-
-var Native = Pudding
 
 var welcomeLog = "";
 welcomeLog += "  +========================================================================+\n";

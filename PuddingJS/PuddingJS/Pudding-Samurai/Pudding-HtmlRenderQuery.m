@@ -210,7 +210,7 @@
             if ( self.renderer )
             {
                 //start: 20160108 by water
-                NSLog(@"rootRender.childs.count = %lu",(unsigned long)rootRender.childs.count);
+                NSLog(@"rootRender.childs.count = %lu",(unsigned long)self.renderer.childs.count);
                 //                if (rootRender.childs.count == 0){
                 //                    [rootRender retainAssociatedObject:rootRender.dom forKey:"dom"];
                 //                    [rootRender.dom retainAssociatedObject:rootRender.dom.document forKey:"document"];
